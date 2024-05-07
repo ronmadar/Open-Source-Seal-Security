@@ -37,9 +37,9 @@ c. Created a new file,/node_modules/tough-cookie/lib/testVerifyVulnerable.js
    verify the vulnerable behavior was fixed.
    COMMAND: node testVerifyVulnerable.js
 
-3. change.diff : https://github.com/ronmadar/Open-Source-Seal-Security/blob/cf768f1932f087c30ebec7fe60c3fca323b4e54b/change.diff
+2. change.diff : https://github.com/ronmadar/Open-Source-Seal-Security/blob/cf768f1932f087c30ebec7fe60c3fca323b4e54b/change.diff
 
-4. 
+3. 
 a. Regular package tough-cookie V 2.5.0 , Command: 
 npm install tough-cookie@2.5.0 && node index.js
 
