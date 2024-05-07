@@ -53,12 +53,12 @@ b. Compress package tough-cookie V 2.5.0 tgz format with changes
 Command: npm install ./tough-cookie-2.5.0-PATCHED.tgz && node index.js
 
 c.
-- Vulnerability: The vulnerability arises from directly modifying the Object.
+* Vulnerability: The vulnerability arises from directly modifying the Object.
   prototype by adding a new property newProperty. 
   This means that every object in the JavaScript environment will inherit this property,
   potentially altering their behavior unintentionally.
 
-- Potential Damage:
+## Potential Damage -
 * Prototype Pollution: 
   By adding properties directly to Object. prototype, there's a risk of polluting the entire prototype chain. 
   This can lead to unexpected behavior across the application, as any object that traverses the prototype chain may be affected.
