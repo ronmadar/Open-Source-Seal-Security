@@ -27,7 +27,8 @@ https://github.com/salesforce/tough-cookie/pull/283
 a. Change tough_cookie_2.5.0\node_modules\tough-cookie\lib\memstore.js 
    All occurrences of new object creation in `memstore.js` have been changed from {}  `Object.create(Object.prototype)` to `Object.create(null)` 
    so that we are using object instances that do not have a prototype property that can be polluted.
-   Example : console.log(a = Object.create(null)); in object a - No properties(or __proto__)
+
+  * Example : console.log(a = Object.create(null)); in object a - No properties(or __ proto __)
   
 b. Created a new , /node_modules/tough-cookie/lib/test-unit.js
    use in vanillajs for it found in tests folder file cookie_jar_test.js "Issue #282 - Prototype pollution"
